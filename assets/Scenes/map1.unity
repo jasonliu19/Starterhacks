@@ -1347,47 +1347,6 @@ Transform:
   m_Father: {fileID: 1884517270}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &660196824
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 660196826}
-  - component: {fileID: 660196825}
-  m_Layer: 0
-  m_Name: endTheGame
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &660196825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 660196824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15832632a1f9ca94e9aa759890ad8712, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  endRadius: 5
---- !u!4 &660196826
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 660196824}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.242716, y: 8.895739, z: 31.393867}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &686669191
 GameObject:
   m_ObjectHideFlags: 0
@@ -1632,6 +1591,7 @@ GameObject:
   - component: {fileID: 835527661}
   - component: {fileID: 835527660}
   - component: {fileID: 835527659}
+  - component: {fileID: 835527663}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -1705,6 +1665,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &835527663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 835527658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15832632a1f9ca94e9aa759890ad8712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endRadius: 5
 --- !u!1 &1059550960
 GameObject:
   m_ObjectHideFlags: 0
@@ -1850,13 +1822,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1989985018962116, guid: e00b4bad75a2134488e300a7cb1ea5ed, type: 2}
-  spawnValues: {x: 50, y: 0, z: 50}
-  spawnWait: 10
-  spawnMostWait: 10
-  spawnLeastWait: 10
+  outradius: 50
+  inradius: 40
+  spawnWait: 4
+  spawnMostWait: 4
+  spawnLeastWait: 4
   startWait: 3
   stop: 0
-  ypos: 1
+  ypos: 1.2
 --- !u!4 &1085127439
 Transform:
   m_ObjectHideFlags: 0

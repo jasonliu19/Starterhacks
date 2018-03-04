@@ -6,7 +6,8 @@ public class spawn : MonoBehaviour {
 
     // we can spawn multiple enemies in the array
     public GameObject enemy;
-    public Vector3 spawnValues;
+    public float outradius;
+    public float inradius;
     public float spawnWait;
     public float spawnMostWait;
     public float spawnLeastWait;
@@ -33,13 +34,13 @@ public class spawn : MonoBehaviour {
 
         while (!stop)
         {
-            float xpos = Random.Range(-spawnValues.x, spawnValues.x);
-            float zpos = Random.Range(-spawnValues.z, spawnValues.z);
+            float xpos = Random.Range(-outradius,outradius);
+            float zpos = Random.Range(-outradius, outradius);
 
             // x, y, z: x is between neg to pos spawnvalues, y = 1, z is similar x
             Vector3 spawnPosition = new Vector3 (xpos,ypos,zpos);
 
-            Instantiate(enemy, spawnPosition + transform.TransformPoint(0, 0, 0), Quaternion.LookRotation(Vector3.zero));
+            if(xpos*xpos+zpos*zpos<=outradius*outradius && xpos * xpos + zpos * zpos >= inradius *inradius)Instantiate(enemy, spawnPosition + transform.TransformPoint(0, 0, 0), Quaternion.LookRotation(Vector3.zero));
 
             yield return new WaitForSeconds(spawnWait);
         }
