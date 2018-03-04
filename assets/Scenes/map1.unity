@@ -167,6 +167,21 @@ Prefab:
       propertyPath: _manager
       value: 
       objectReference: {fileID: 535835773}
+    - target: {fileID: 136661047138582166, guid: 3a8c78f532b8c5f43bc2d5e30651dcff,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 136661047138582166, guid: 3a8c78f532b8c5f43bc2d5e30651dcff,
+        type: 2}
+      propertyPath: m_Height
+      value: 0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 114386104372814792, guid: 3a8c78f532b8c5f43bc2d5e30651dcff,
+        type: 2}
+      propertyPath: _isAttached
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3a8c78f532b8c5f43bc2d5e30651dcff, type: 2}
   m_IsPrefabParent: 0

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Grenade : MonoBehaviour {
+    public static int numGrenades = 1;
 
     public float delay = 3f;
 
@@ -45,6 +46,7 @@ public class Grenade : MonoBehaviour {
 
     void Explode ()
     {
+        numGrenades--;
         Instantiate(explosionEffect, transform.position, transform.rotation);
 
         Collider[] colliders = Physics.OverlapSphere(transform.position, radius);

@@ -12,9 +12,13 @@ public class GestureHandlerLeft : MonoBehaviour {
 
 	public void CreateGrenade()
     {
-        GameObject newGrenade = Instantiate(grenade, slotObject.transform.position, Quaternion.identity);
-        newGrenade.GetComponent<AnchorableBehaviour>().anchorGroup = group;
-        newGrenade.GetComponent<AnchorableBehaviour>().anchor = slotObject.GetComponent<Anchor>();
-        newGrenade.GetComponent<AnchorableBehaviour>().isAttached = true;
+        if(Grenade.numGrenades < 1)
+        {
+            Grenade.numGrenades++;
+            GameObject newGrenade = Instantiate(grenade, slotObject.transform.position, Quaternion.identity);
+            newGrenade.GetComponent<AnchorableBehaviour>().anchorGroup = group;
+            newGrenade.GetComponent<AnchorableBehaviour>().anchor = slotObject.GetComponent<Anchor>();
+            newGrenade.GetComponent<AnchorableBehaviour>().isAttached = true;
+        }
     }
 }
