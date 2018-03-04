@@ -29,7 +29,7 @@ public class DetectBowGesture : MonoBehaviour {
         if(!startedGesture && leftHandInPosition && rightHandInPosition)
         {
             //Check proximity of hands
-            if(Vector3.Distance(LeftHandThumb.transform.position, RightHandThumb.transform.position) < 5.0F)
+            if(Vector3.Distance(LeftHandThumb.transform.position, RightHandThumb.transform.position) < 0.05F)
             {
                 startedGesture = true;
                 print("Starting bow gesture");

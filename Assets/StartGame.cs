@@ -1,10 +1,13 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class StartGame : MonoBehaviour
 {
-    public void GoToLevel(string level)
+    
+    public void changeMenuScene(string scenename)
     {
-        Application.LoadLevel(level);
+        print("Button was pressed");
+        Application.LoadLevel(scenename);
     }
 }
