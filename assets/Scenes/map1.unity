@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -274,6 +274,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114260514288602590, guid: fdf0ba022764e2e468c5e23e51d25593,
+        type: 2}
+      propertyPath: Detectors.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 114515712427863730, guid: fdf0ba022764e2e468c5e23e51d25593,
         type: 2}
       propertyPath: leftHandControllers.Array.size
@@ -283,6 +288,11 @@ Prefab:
         type: 2}
       propertyPath: rightHandControllers.Array.size
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114260514288602590, guid: fdf0ba022764e2e468c5e23e51d25593,
+        type: 2}
+      propertyPath: OnDeactivate.m_PersistentCalls.m_Calls.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4800378309112358, guid: fdf0ba022764e2e468c5e23e51d25593, type: 2}
       propertyPath: m_LocalPosition.x
@@ -355,12 +365,88 @@ Prefab:
     - target: {fileID: 114889918725222722, guid: fdf0ba022764e2e468c5e23e51d25593,
         type: 2}
       propertyPath: OffAngle
-      value: 72.6
+      value: 88
       objectReference: {fileID: 0}
     - target: {fileID: 114889918725222722, guid: fdf0ba022764e2e468c5e23e51d25593,
         type: 2}
       propertyPath: OnAngle
-      value: 49.8
+      value: 59
+      objectReference: {fileID: 0}
+    - target: {fileID: 114260514288602590, guid: fdf0ba022764e2e468c5e23e51d25593,
+        type: 2}
+      propertyPath: AddAllSiblingDetectorsOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114260514288602590, guid: fdf0ba022764e2e468c5e23e51d25593,
+        type: 2}
+      propertyPath: Detectors.Array.data[0]
+      value: 
+      objectReference: {fileID: 535835780}
+    - target: {fileID: 114260514288602590, guid: fdf0ba022764e2e468c5e23e51d25593,
+        type: 2}
+      propertyPath: Detectors.Array.data[1]
+      value: 
+      objectReference: {fileID: 535835779}
+    - target: {fileID: 4035690523523620, guid: fdf0ba022764e2e468c5e23e51d25593, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4326340701080912, guid: fdf0ba022764e2e468c5e23e51d25593, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4211984393428616, guid: fdf0ba022764e2e468c5e23e51d25593, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4055485091924694, guid: fdf0ba022764e2e468c5e23e51d25593, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114260514288602590, guid: fdf0ba022764e2e468c5e23e51d25593,
+        type: 2}
+      propertyPath: OnActivate.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1414438302}
+    - target: {fileID: 114260514288602590, guid: fdf0ba022764e2e468c5e23e51d25593,
+        type: 2}
+      propertyPath: OnActivate.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetLeftHandState
+      objectReference: {fileID: 0}
+    - target: {fileID: 114260514288602590, guid: fdf0ba022764e2e468c5e23e51d25593,
+        type: 2}
+      propertyPath: OnActivate.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114260514288602590, guid: fdf0ba022764e2e468c5e23e51d25593,
+        type: 2}
+      propertyPath: OnActivate.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114260514288602590, guid: fdf0ba022764e2e468c5e23e51d25593,
+        type: 2}
+      propertyPath: OnDeactivate.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114260514288602590, guid: fdf0ba022764e2e468c5e23e51d25593,
+        type: 2}
+      propertyPath: OnDeactivate.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114260514288602590, guid: fdf0ba022764e2e468c5e23e51d25593,
+        type: 2}
+      propertyPath: OnDeactivate.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1414438302}
+    - target: {fileID: 114260514288602590, guid: fdf0ba022764e2e468c5e23e51d25593,
+        type: 2}
+      propertyPath: OnDeactivate.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetLeftHandState
+      objectReference: {fileID: 0}
+    - target: {fileID: 114260514288602590, guid: fdf0ba022764e2e468c5e23e51d25593,
+        type: 2}
+      propertyPath: OnDeactivate.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fdf0ba022764e2e468c5e23e51d25593, type: 2}
@@ -407,6 +493,206 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 535835766}
   m_Script: {fileID: 11500000, guid: 0625e574c0d47a241b7dfc7a8c67ca2b, type: 3}
+--- !u!4 &535835774 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4240324526422474, guid: fdf0ba022764e2e468c5e23e51d25593,
+    type: 2}
+  m_PrefabInternal: {fileID: 535835766}
+--- !u!1 &535835775 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1679398077747800, guid: fdf0ba022764e2e468c5e23e51d25593,
+    type: 2}
+  m_PrefabInternal: {fileID: 535835766}
+--- !u!1 &535835776 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1612204522280292, guid: fdf0ba022764e2e468c5e23e51d25593,
+    type: 2}
+  m_PrefabInternal: {fileID: 535835766}
+--- !u!1 &535835777 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1744833726949904, guid: fdf0ba022764e2e468c5e23e51d25593,
+    type: 2}
+  m_PrefabInternal: {fileID: 535835766}
+--- !u!1 &535835778 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1192329443184192, guid: fdf0ba022764e2e468c5e23e51d25593,
+    type: 2}
+  m_PrefabInternal: {fileID: 535835766}
+--- !u!114 &535835779 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114889918725222722, guid: fdf0ba022764e2e468c5e23e51d25593,
+    type: 2}
+  m_PrefabInternal: {fileID: 535835766}
+  m_Script: {fileID: 11500000, guid: 6b77174815b904166ad047382f534c36, type: 3}
+--- !u!114 &535835780 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114294262982766906, guid: fdf0ba022764e2e468c5e23e51d25593,
+    type: 2}
+  m_PrefabInternal: {fileID: 535835766}
+  m_Script: {fileID: 11500000, guid: e98e641d160144e87a3d33fcdb893a02, type: 3}
+--- !u!114 &535835781 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114831660225215314, guid: fdf0ba022764e2e468c5e23e51d25593,
+    type: 2}
+  m_PrefabInternal: {fileID: 535835766}
+  m_Script: {fileID: 11500000, guid: 3da44615dc3c5b4499ea3581943279ee, type: 3}
+--- !u!114 &535835782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 535835776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e309ac4138f124f9f8ad312a14a8e9ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnActivate:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1414438302}
+        m_MethodName: SetRightHandState
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnDeactivate:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1414438302}
+        m_MethodName: SetRightHandState
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  _handModel: {fileID: 0}
+  ControlsTransform: 1
+  ShowGizmos: 1
+  ActivateDistance: 0.02
+  DeactivateDistance: 0.05
+--- !u!114 &535835783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 535835778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c057ae8396c1146c98a146b81dcc5870, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnActivate:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 535835781}
+        m_MethodName: CreateGrenade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  Period: 0.1
+  HandModel: {fileID: 0}
+  PointingType: 1
+  PointingDirection: {x: 0, y: 0, z: 1}
+  TargetObject: {fileID: 0}
+  OnAngle: 20
+  OffAngle: 101
+  ShowGizmos: 1
+--- !u!114 &535835784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 535835778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e98e641d160144e87a3d33fcdb893a02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  Period: 0.1
+  HandModel: {fileID: 0}
+  Thumb: 0
+  Index: 0
+  Middle: 0
+  Ring: 0
+  Pinky: 0
+  MinimumExtendedCount: 5
+  MaximumExtendedCount: 5
+  ShowGizmos: 1
+--- !u!114 &535835785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 535835778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2474ece6beb54f10ac1437338b3cb89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnActivate:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 535835781}
+        m_MethodName: CreateGrenade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  Detectors:
+  - {fileID: 535835784}
+  - {fileID: 535835783}
+  AddAllSiblingDetectorsOnAwake: 1
+  GateType: 0
+  Negate: 0
 --- !u!1001 &542558060
 Prefab:
   m_ObjectHideFlags: 0
@@ -652,6 +938,49 @@ Transform:
   m_PrefabParentObject: {fileID: 4424633396814738, guid: e00b4bad75a2134488e300a7cb1ea5ed,
     type: 2}
   m_PrefabInternal: {fileID: 1253733658}
+--- !u!1 &1414438301
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1414438303}
+  - component: {fileID: 1414438302}
+  m_Layer: 0
+  m_Name: ProjectileHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1414438302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1414438301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0ceeb4adb19ea4cbffac4dd1c669f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LeftHandThumb: {fileID: 535835777}
+  RightHandThumb: {fileID: 535835775}
+  projectile: {fileID: 1640970515402414, guid: 3a8c78f532b8c5f43bc2d5e30651dcff, type: 2}
+--- !u!4 &1414438303
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1414438301}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 535835774}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1710554424
 GameObject:
   m_ObjectHideFlags: 0
