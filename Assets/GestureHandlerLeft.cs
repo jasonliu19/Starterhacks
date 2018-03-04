@@ -1,15 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Leap.Unity.Interaction;
 
 public class GestureHandlerLeft : MonoBehaviour {
 
     // Use this for initialization
     public GameObject slotObject;
-    public Rigidbody grenade;
+    public GameObject grenade;
+    public AnchorGroup group;
 
 	public void CreateGrenade()
     {
-        Instantiate(grenade, slotObject.transform.position, Quaternion.identity);
+        if(Grenade.numGrenades < 1)
+        {
+            Grenade.numGrenades++;
+            GameObject newGrenade = Instantiate(grenade, slotObject.transform.position, Quaternion.identity);
+            newGrenade.GetComponent<AnchorableBehaviour>().anchorGroup = group;
+            newGrenade.GetComponent<AnchorableBehaviour>().anchor = slotObject.GetComponent<Anchor>();
+            newGrenade.GetComponent<AnchorableBehaviour>().isAttached = true;
+        }
     }
 }
