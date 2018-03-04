@@ -11,9 +11,11 @@ public class LaunchedGrenade : MonoBehaviour {
 
     public float force = 700f;
 
-    public float speed = 50000000f;
+    public float speed = 5000000000f;
 
     float countdown;
+
+    public int colliderEnableCountdown = 40;
 
     bool hasExploded = false;
 
@@ -33,12 +35,18 @@ public class LaunchedGrenade : MonoBehaviour {
     {
         if (isThrown)
         {
+            colliderEnableCountdown--;
             countdown -= Time.deltaTime;
         }
         if ((countdown <= 0f) && (hasExploded == false))
         {
             Explode();
             hasExploded = true;
+        }
+
+        if (colliderEnableCountdown < 0)
+        {
+            this.GetComponent<SphereCollider>().enabled = true;
         }
 
     }
@@ -66,5 +74,10 @@ public class LaunchedGrenade : MonoBehaviour {
         }
 
         Destroy(gameObject);
+    }
+    
+    void OnCollisionEnter(Collision c)
+    {
+        Explode();
     }
 }

@@ -12,6 +12,7 @@ public class enemyMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         thisVelocity = (-1.0F*rb.position.normalized)*speed;
+        thisVelocity.y = 0;
     }
     void FixedUpdate()
     {
