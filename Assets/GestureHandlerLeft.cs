@@ -9,6 +9,6 @@ public class GestureHandlerLeft : MonoBehaviour {
 
 	public void CreateGrenade()
     {
-        Instantiate(grenade, new Vector3(0, 2, 0), Quaternion.identity);
+        Instantiate(grenade, new Vector3(0.1F, 1, 0), Quaternion.identity);
     }
 }
