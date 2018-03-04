@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starterhacks", "Starterhacks.csproj", "{F8CF7449-B0C2-8580-D54A-032F19B02DA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starterhacks.Plugins", "Starterhacks.Plugins.csproj", "{32897A3D-8EA2-A5D8-7177-7D77F789F7F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starterhacks.Editor", "Starterhacks.Editor.csproj", "{EC326539-65FF-27AE-4E43-2BE7E603E6CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starterhacks.Editor.Plugins", "Starterhacks.Editor.Plugins.csproj", "{AFC32B67-99C9-1172-7712-D087EF2906E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8CF7449-B0C2-8580-D54A-032F19B02DA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8CF7449-B0C2-8580-D54A-032F19B02DA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8CF7449-B0C2-8580-D54A-032F19B02DA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8CF7449-B0C2-8580-D54A-032F19B02DA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32897A3D-8EA2-A5D8-7177-7D77F789F7F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32897A3D-8EA2-A5D8-7177-7D77F789F7F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32897A3D-8EA2-A5D8-7177-7D77F789F7F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32897A3D-8EA2-A5D8-7177-7D77F789F7F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC326539-65FF-27AE-4E43-2BE7E603E6CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC326539-65FF-27AE-4E43-2BE7E603E6CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC326539-65FF-27AE-4E43-2BE7E603E6CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC326539-65FF-27AE-4E43-2BE7E603E6CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFC32B67-99C9-1172-7712-D087EF2906E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFC32B67-99C9-1172-7712-D087EF2906E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFC32B67-99C9-1172-7712-D087EF2906E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFC32B67-99C9-1172-7712-D087EF2906E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
