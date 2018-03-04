@@ -19,10 +19,14 @@ public class Grenade : MonoBehaviour {
 
     public GameObject explosionEffect;
 
+    // Audio
+    public AudioClip grenadeAudio;
+    public AudioSource grenadeSource;
+
     // Use this for initialization
     void Start() {
         countdown = delay;
-
+        grenadeSource.clip = grenadeAudio;
     }
 
     // Update is called once per frame
@@ -35,6 +39,7 @@ public class Grenade : MonoBehaviour {
         {
             Explode();
             hasExploded = true;
+            grenadeSource.Play();
         }
 
     }
