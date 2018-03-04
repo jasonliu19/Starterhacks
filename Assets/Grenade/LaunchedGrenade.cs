@@ -21,6 +21,8 @@ public class LaunchedGrenade : MonoBehaviour {
 
     bool isThrown = false;
 
+    Vector3 thisVelocity = Vector3.zero;
+
     public GameObject explosionEffect;
 
     // Use this for initialization
@@ -37,6 +39,7 @@ public class LaunchedGrenade : MonoBehaviour {
         {
             colliderEnableCountdown--;
             countdown -= Time.deltaTime;
+            this.GetComponent<Rigidbody>().velocity = thisVelocity;
         }
         if ((countdown <= 0f) && (hasExploded == false))
         {
@@ -54,7 +57,8 @@ public class LaunchedGrenade : MonoBehaviour {
     public void Shoot(Vector3 vel)
     {
         isThrown = true;
-        this.GetComponent<Rigidbody>().velocity = vel*speed;
+        //this.GetComponent<Rigidbody>().velocity = vel*speed;
+        thisVelocity = vel * speed;
     }
 
     void Explode()
