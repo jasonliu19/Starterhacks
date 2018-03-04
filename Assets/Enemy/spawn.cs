@@ -34,10 +34,10 @@ public class spawn : MonoBehaviour {
         while (!stop)
         {
             float xpos = Random.Range(-spawnValues.x, spawnValues.x);
-            float ypos = Random.Range(-spawnValues.y, spawnValues.y);
+            float zpos = Random.Range(-spawnValues.z, spawnValues.z);
 
             // x, y, z: x is between neg to pos spawnvalues, y = 1, z is similar x
-            Vector3 spawnPosition = new Vector3 (xpos,1,ypos);
+            Vector3 spawnPosition = new Vector3 (xpos,ypos,zpos);
 
             Instantiate(enemy, spawnPosition + transform.TransformPoint(0, 0, 0), Quaternion.LookRotation(Vector3.zero));
 
