@@ -41,12 +41,13 @@ public class DetectBowGesture : MonoBehaviour {
         {
             if(leftHandInPosition && rightHandInPosition)
             {
-                currentProjectile.transform.position = LeftHandThumb.transform.position;
+                currentProjectile.transform.position = RightHandThumb.transform.position;
             }
             else
             {
                 startedGesture = false;
-                Destroy(currentProjectile);
+                Vector3 vel = LeftHandThumb.transform.position - RightHandThumb.transform.position;
+                currentProjectile.GetComponent<LaunchedGrenade>().Shoot(vel);
             }
         }
     }
