@@ -11,7 +11,7 @@ public class LaunchedGrenade : MonoBehaviour {
 
     public float force = 700f;
 
-    public float speed = 5f;
+    public float speed = 50000000f;
 
     float countdown;
 
@@ -29,7 +29,7 @@ public class LaunchedGrenade : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (isThrown)
         {
@@ -46,7 +46,7 @@ public class LaunchedGrenade : MonoBehaviour {
     public void Shoot(Vector3 vel)
     {
         isThrown = true;
-        this.GetComponent<Rigidbody>().velocity = vel;
+        this.GetComponent<Rigidbody>().velocity = vel*speed;
     }
 
     void Explode()

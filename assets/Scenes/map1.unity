@@ -1434,7 +1434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LeftHandThumb: {fileID: 535835777}
   RightHandThumb: {fileID: 535835775}
-  projectile: {fileID: 1640970515402414, guid: 3a8c78f532b8c5f43bc2d5e30651dcff, type: 2}
+  projectile: {fileID: 1296500740256690, guid: d4213388e02317a4e83f07f7d7d0e6be, type: 2}
 --- !u!4 &1414438303
 Transform:
   m_ObjectHideFlags: 0
@@ -1782,7 +1782,7 @@ MonoBehaviour:
   lockWhenAttached: 1
   matchAnchorMotionWhileAttaching: 1
   anchorLerpCoeffPerSec: 20
-  anchorRotation: 0
+  anchorRotation: 1
   interactionBehaviour: {fileID: 2061120625}
   _interactionBehaviourIsNull: 0
   detachWhenGrasped: 1

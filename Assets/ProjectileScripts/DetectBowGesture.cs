@@ -29,7 +29,7 @@ public class DetectBowGesture : MonoBehaviour {
         if(!startedGesture && leftHandInPosition && rightHandInPosition)
         {
             //Check proximity of hands
-            if(Vector3.Distance(LeftHandThumb.transform.position, RightHandThumb.transform.position) < 0.05F)
+            if(Vector3.Distance(LeftHandThumb.transform.position, RightHandThumb.transform.position) < 0.09F)
             {
                 startedGesture = true;
                 print("Starting bow gesture");
@@ -39,15 +39,24 @@ public class DetectBowGesture : MonoBehaviour {
 
         if (startedGesture)
         {
-            if(leftHandInPosition && rightHandInPosition)
+            if(leftHandInPosition && rightHandInPosition && currentProjectile != null && RightHandThumb != null)
             {
-                currentProjectile.transform.position = RightHandThumb.transform.position;
+                 currentProjectile.transform.position = RightHandThumb.transform.position;
+
             }
-            else
+            else if (currentProjectile != null)
             {
                 startedGesture = false;
-                Vector3 vel = LeftHandThumb.transform.position - RightHandThumb.transform.position;
-                currentProjectile.GetComponent<LaunchedGrenade>().Shoot(vel);
+                if(RightHandThumb != null)
+                {
+                    Vector3 vel = LeftHandThumb.transform.position - RightHandThumb.transform.position;
+                    currentProjectile.GetComponent<LaunchedGrenade>().Shoot(vel);
+                }
+                else
+                {
+                    currentProjectile.GetComponent<LaunchedGrenade>().Shoot(new Vector3(0, 0, 0));
+                }
+
             }
         }
     }
